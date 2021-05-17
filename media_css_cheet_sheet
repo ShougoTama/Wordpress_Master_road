@@ -2,12 +2,15 @@
 cssのmedia対応などのcheat_sheetが書かれていてとても助かる
 
 /*------------------------------------------
-  Responsive Grid Media Queries - 1280, 1024, 768, 480
+  Responsive Grid Media Queries -1920, 1280, 1024, 768, 480
+   1920-1280   - デスクトップ
    1280-1024   - デスクトップ（デフォルトのグリッド）
    1024-768    - タブレット横長
    768-480     - タブレット縦長
    480-less    - スマホ
---------------------------------------------*/
+--------------------------------------------*
+@media all and (min-width: 1280) and (max-width: 1920px) {}
+
 @media all and (min-width: 1024px) and (max-width: 1280px) { }
  
 @media all and (min-width: 768px) and (max-width: 1024px) { }
