@@ -1,0 +1,62 @@
+テンプレートファイルの優先順位
+
+front-page.php　トップページ
+single.php 投稿サイトのページ
+page.php 固定ページの表示
+category.php カテゴリーページの表示
+search.php 検索結果ページを表示
+archive.php 記事一覧を表示
+404.php　４０４エラーぺーじの表示
+
+トップページのテンプレート階層
+front-page.php
+固定ページ表示ルール
+home.php
+index.php
+
+個別投稿ページ
+single-post_type.php
+single.php
+singular.php
+indexl.php
+
+カテゴリー別記事
+category-slug.php
+category-id.php
+category.php
+archive.php
+index.php
+
+月別記事一覧ページ
+date.php
+archive.php
+index.php
+
+
+index.phpを分解
+
+header.php
+footer.php
+
+index.phpにそれぞれを呼び出す関数
+get_header()
+get_footer()
+
+そしてフック関数を使うために
+headの前に
+wp_head()
+
+bodyの最後に
+wp_footer()
+
+bodyの初めに
+wp_body_open()
+
+jsを呼び出す関数
+wp_enqueue_script($handleスクリプト名、$srcスクリプトパス,$deps関連するスクリプトのハンドル名$varバージョン$in_footer wp_footerで出力する場合 true)
+
+css　font-awsomeなどを呼び出す方法
+wp_enqueue_style($handle,$src,%depsこのスタイルシートより前に読み込まれるべきハンドルの配列,$ver, $media)
+
+条件分岐
+is_home
