@@ -1,0 +1,3 @@
+まずはじめにthemeのフォルダーに作りたいテーマの後ろにchildとつけるとわかりやすいです。　例 ◯◯◯◯◯-child 
+そのchildフォルダの中にstyle.cssとfunction.phpを作ります
+その後wordpressから有効にするとできます
