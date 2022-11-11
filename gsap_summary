@@ -1,0 +1,10 @@
+ここではjavascriptのライブラリのまとめ
+まず初めにgsapのリンクを書いておく
+https://greensock.com/docs/v3/HelperFunctions
+
+gsapは高機能モーションを実装できるjavascriptのライブラリになっていて
+今回使ったのはgsap.to関数とScrollTrigerというものを使った。
+簡単に説明すると,
+gsap.toはどこの方向にどれくらい動かすのかというものだ、
+そしてScrollTrigerはどの位置からスタートしてどの場所までそれを持続させるのかというものだった。
+これを使う事により横スクロールを実装できた、そしてこれは色々使うと思うのでまとめておく
