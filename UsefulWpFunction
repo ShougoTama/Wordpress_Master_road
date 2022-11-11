@@ -1,0 +1,17 @@
+よく使うwordpress関数
+
+javascript追加時に使う
+
+function enqueue_scripts()
+{
+    // CSS
+    //wp_enqueue_style('main-css', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), '', 'all');
+
+    // JS
+    //　<?php get_stylesheet_directory_uri(); ?> 子テーマのとき
+    wp_enqueue_script('index-js', get_stylesheet_directory_uri() . '/umd/gsap.js', array( ), '', true);
+    
+	  wp_enqueue_script('onegai-js', get_stylesheet_directory_uri() . '/umd/ScrollTrigger.js', array( ), '', true);
+}          
+           
+add_action('wp_enqueue_scripts'/*(フックする関数)*/, 'enqueue_scripts'/*(呼び出したい関数)*/);
